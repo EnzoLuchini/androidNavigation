@@ -33,13 +33,13 @@ fun MenuScreen(modifier: Modifier = Modifier, navController: NavController) {
                 .align(Alignment.Center)
         ) {
             Button(
-                onClick = { navController.navigate("pedido") })
+                onClick = { navController.navigate("pedidos?cliente=Cliente XPTO")  })
             {
                 Text(text = "Ir para a pagina de pedido")
             }
             Spacer(modifier = Modifier.height(20.dp))
             Button(
-                onClick = { navController.navigate("perfil") })
+                onClick = {  navController.navigate("perfil/Fulano de Tal/27")  })
             {
                 Text(text = "Ir para a pagina de perfil")
             }
